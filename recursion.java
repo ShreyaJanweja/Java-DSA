@@ -228,3 +228,28 @@
 // }
 
 
+// //palindrome of a number
+// import java.util.*;
+// public class recursion {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int rev=reverse(n);
+//         if(rev==n){
+//             System.out.println("Palindrome");
+//         }
+//         else{
+//             System.out.println("Not a Palindrome");
+//         }
+//         sc.close();
+//     }
+//     public static int rev=0;
+//     public static int reverse(int n){
+//         if(n==0) return 0;
+//         int d=n%10;
+//         rev=rev*10+d;
+//         reverse(n/10);
+//         return rev;
+//     }
+// }
