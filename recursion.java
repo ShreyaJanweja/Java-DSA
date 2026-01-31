@@ -170,18 +170,37 @@
 // }
 
 
-//sum of Digits
-import java.util.*;
-public class recursion {
+// //sum of Digits
+// import java.util.*;
+// public class recursion {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        System.out.println(sumOfDigits(n));
-        sc.close();
-    }
-    public static int sumOfDigits(int n){
-        if(n==0) return 0;
-        return n%10+sumOfDigits(n/10);
-    }
-}
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         System.out.println(sumOfDigits(n));
+//         sc.close();
+//     }
+//     public static int sumOfDigits(int n){
+//         if(n==0) return 0;
+//         return n%10+sumOfDigits(n/10);
+//     }
+// }
+
+
+// //product of Digits
+// import java.util.*;
+// public class recursion {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         System.out.println(productOfDigit(n));
+//         sc.close();
+//     }
+//     public static int productOfDigit(int n){
+//         if(n==0||n==1) return 1;
+//         return n%10*productOfDigit(n/10);
+//     }
+// }
+
+
