@@ -253,3 +253,25 @@
 //         return rev;
 //     }
 // }
+
+
+
+//count no. of zeroes in a no.
+import java.util.*;
+public class recursion {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(countZeroes(n));
+        sc.close();
+    }
+    public static int count=0;
+    public static int countZeroes(int n){
+        if(n==0) return 0;
+        int d=n%10;
+        if(d==0) count++;
+        countZeroes(n/10);
+        return count;
+    }
+}
