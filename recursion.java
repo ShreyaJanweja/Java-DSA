@@ -92,23 +92,45 @@
 
 
 
-//-----------LECTURE-2 QUESTIONS(EASY)-----------
-//print no. from n to 1
-import java.util.*;
-public class recursion {
+// //-----------LECTURE-2 QUESTIONS(EASY)-----------
+// //print no. from n to 1
+// import java.util.*;
+// public class recursion {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        printNto1(n);
-        sc.close();
-    }
-    public static void printNto1(int n){
-        if(n==1){
-            System.out.println(n);
-            return;
-        }
-        System.out.print(n+" ");
-        printNto1(n-1);
-    }
-}
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         printNto1(n);
+//         sc.close();
+//     }
+//     public static void printNto1(int n){
+//         if(n==1){
+//             System.out.println(n);
+//             return;
+//         }
+//         System.out.print(n+" ");
+//         printNto1(n-1);
+//     }
+// }
+
+
+
+// //print no. from 1 to n
+// import java.util.*;
+// public class recursion {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         print1toN(n);
+//         sc.close();
+//     }
+//     public static void print1toN(int n){
+//         if(n==1){
+//             System.out.print(n+" ");
+//             return;
+//         }
+//         print1toN(n-1);
+//         System.out.print(n+" ");
+//     }
+// }
