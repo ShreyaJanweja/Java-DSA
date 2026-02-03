@@ -48,7 +48,34 @@
 
 
 
-//linear search on multiple Occurences
+// //linear search on multiple Occurences
+// import java.util.*;
+// public class ArrayRecursion {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[] = new int[n];
+//         for(int i=0; i<n; i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         int target = sc.nextInt();
+//         sc.close();
+//         findAllindeces(arr, target, 0);
+//         System.out.println(list);
+//     }
+//     static ArrayList<Integer> list = new ArrayList<>();
+//     static void findAllindeces(int arr[], int target, int idx){
+//         if(idx==arr.length) return;
+//         if(arr[idx]==target){
+//             list.add(idx);
+//         }
+//         findAllindeces(arr, target, idx+1);
+//     }
+// }
+
+
+
+//linear search on multiple Occurences using passing list as parameter(ArrayList)
 import java.util.*;
 public class ArrayRecursion {
     public static void main(String[] args) {
@@ -60,16 +87,17 @@ public class ArrayRecursion {
         }
         int target = sc.nextInt();
         sc.close();
-        findAllindeces(arr, target, 0);
-        System.out.println(list);
+        System.out.println(findAllindeces(arr, target, 0, new ArrayList<>()));
     }
-    static ArrayList<Integer> list = new ArrayList<>();
-    static void findAllindeces(int arr[], int target, int idx){
-        if(idx==arr.length) return;
+    static ArrayList<Integer> findAllindeces(int arr[], int target, int idx, ArrayList<Integer> list){
+        if(idx==arr.length) return list;
         if(arr[idx]==target){
             list.add(idx);
         }
-        findAllindeces(arr, target, idx+1);
+        return findAllindeces(arr, target, idx+1,list);
     }
- 
 }
+
+
+
+
