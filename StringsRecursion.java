@@ -55,3 +55,33 @@
 
 
 
+//empty commit 
+import java.util.*;
+public class StringsRecursion {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        sc.close();
+        skip("", str);
+
+    }
+    public static void skip(String ans, String str){
+        if(str.isEmpty()){
+            System.out.println(ans);
+            return;
+        }
+        char ch = str.charAt(0);
+        if(ch=='a'){
+            skip(ans , str.substring(1));
+        }
+        else{
+            skip(ans+ch , str.substring(1));
+        }
+    }
+}
+
+
+
+
+
