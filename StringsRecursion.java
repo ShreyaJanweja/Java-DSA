@@ -47,7 +47,29 @@
 
 
 
-//ques2.) remove an entire string from the sentence using recursion
+// //ques2.) remove an entire string from the sentence using recursion
+// import java.util.*;
+// public class StringsRecursion {
+
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String str = sc.nextLine();
+//         String word = sc.nextLine();
+//         sc.close();
+//         System.out.println(extractString(str,word));
+//     }
+//     public static String extractString(String str, String word){
+//         if(str.length()==0) return "";
+//         if(str.startsWith(word)) return extractString(str.substring(word.length()), word);
+//         else return str.charAt(0) + extractString(str.substring(1),word);
+//     }
+// }
+
+
+
+
+//ques.3) skip the string if it's not the required string 
+//ex: input: bacapplecdah , skip "app" only when it is not "apple" 
 import java.util.*;
 public class StringsRecursion {
 
@@ -55,13 +77,14 @@ public class StringsRecursion {
         Scanner sc=new Scanner(System.in);
         String str = sc.nextLine();
         String word = sc.nextLine();
+        String notWord = sc.nextLine();
         sc.close();
-        System.out.println(extractString(str,word));
+        System.out.println(extractString(str,word,notWord));
     }
-    public static String extractString(String str, String word){
+    public static String extractString(String str, String word,String notWord){
         if(str.length()==0) return "";
-        if(str.startsWith(word)) return extractString(str.substring(word.length()), word);
-        else return str.charAt(0) + extractString(str.substring(1),word);
+        if(str.startsWith(word) && !str.startsWith(notWord)) return extractString(str.substring(word.length()), word,notWord);
+        else return str.charAt(0) + extractString(str.substring(1),word,notWord);
     }
 }
 
