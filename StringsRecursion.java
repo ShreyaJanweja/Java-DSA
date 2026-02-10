@@ -26,25 +26,42 @@
 // }
 
 
-//method - 2 (morre optimized and better than method-1)
+// //method - 2 (morre optimized and better than method-1)
+// import java.util.*;
+// public class StringsRecursion {
+
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String str = sc.nextLine();
+//         sc.close();
+//         System.out.println(extractA(str));
+//     }
+//     public static String extractA(String str){
+//         if(str.length()==0) return "";
+//         char ch = str.charAt(0);
+//         if(ch=='a') return extractA(str.substring(1));
+//         else return ch+extractA(str.substring(1));
+//     }
+// }
+
+
+
+
+//ques2.) remove an entire string from the sentence using recursion
 import java.util.*;
 public class StringsRecursion {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String str = sc.nextLine();
+        String word = sc.nextLine();
         sc.close();
-        System.out.println(extractA(str));
+        System.out.println(extractString(str,word));
     }
-    public static String extractA(String str){
+    public static String extractString(String str, String word){
         if(str.length()==0) return "";
-        char ch = str.charAt(0);
-        if(ch=='a') return extractA(str.substring(1));
-        else return ch+extractA(str.substring(1));
+        if(str.startsWith(word)) return extractString(str.substring(word.length()), word);
+        else return str.charAt(0) + extractString(str.substring(1),word);
     }
 }
-
-
-
-
 
