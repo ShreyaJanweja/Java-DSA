@@ -68,23 +68,54 @@
 
 
 
-//ques.3) skip the string if it's not the required string 
-//ex: input: bacapplecdah , skip "app" only when it is not "apple" 
-import java.util.*;
-public class StringsRecursion {
+// //ques.3) skip the string if it's not the required string 
+// //ex: input: bacapplecdah , skip "app" only when it is not "apple" 
+// import java.util.*;
+// public class StringsRecursion {
 
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str = sc.nextLine();
-        String word = sc.nextLine();
-        String notWord = sc.nextLine();
-        sc.close();
-        System.out.println(extractString(str,word,notWord));
-    }
-    public static String extractString(String str, String word,String notWord){
-        if(str.length()==0) return "";
-        if(str.startsWith(word) && !str.startsWith(notWord)) return extractString(str.substring(word.length()), word,notWord);
-        else return str.charAt(0) + extractString(str.substring(1),word,notWord);
-    }
-}
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         String str = sc.nextLine();
+//         String word = sc.nextLine();
+//         String notWord = sc.nextLine();
+//         sc.close();
+//         System.out.println(extractString(str,word,notWord));
+//     }
+//     public static String extractString(String str, String word,String notWord){
+//         if(str.length()==0) return "";
+//         if(str.startsWith(word) && !str.startsWith(notWord)) return extractString(str.substring(word.length()), word,notWord);
+//         else return str.charAt(0) + extractString(str.substring(1),word,notWord);
+//     }
+// }
 
+
+
+// //ques.4) print all the permutations of a string using recursion
+// import java.util.*;
+// public class StringsRecursion {
+//     public static void swap(StringBuilder sb,int start,int i){
+//         char temp=sb.charAt(start);
+//         sb.setCharAt(start, sb.charAt(i));
+//         sb.setCharAt(i, temp);
+//     }
+// public static void backTrackingPermutation(StringBuilder sb,int start)
+// {
+//     if(start==sb.length()-1) {
+//         System.out.println(sb);
+//         return;
+//     }
+//     for(int i=start;i<sb.length();i++)
+//     {
+//         swap(sb,start,i);
+//         backTrackingPermutation(sb,start+1);
+//         swap(sb,start,i); // backtrack
+//     }
+// }
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         backTrackingPermutation(new StringBuilder(s),0);
+//         sc.close();
+//     }
+    
+// }
