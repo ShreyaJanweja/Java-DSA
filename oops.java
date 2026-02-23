@@ -76,3 +76,23 @@
 //     }
 // }
 
+
+
+// //Question 4 – Single Inheritance-problem .Create:Class Animal,Class Dog extends Animal . Add methods and test inheritance
+// class Animal{
+//     void display1(){
+//         System.out.println("Animal loves to eat");
+//     }
+// }
+// class Dog extends Animal{
+//     void display2(){
+//         System.out.println("Dog");
+//     }
+// }
+// public class oops{
+//     public static void main(String args[]){
+//         Dog d = new Dog();
+//         d.display1();
+//         d.display2();
+//     }
+// }
