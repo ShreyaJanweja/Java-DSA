@@ -96,3 +96,27 @@
 //         d.display2();
 //     }
 // }
+
+
+
+// //Question 5 – Method Overriding - Problem . Create class Vehicle with method start() . Create subclass Car that overrides it.
+// class Vehicle{
+//     void start(){
+//         System.out.println("Vehicle");
+//     }
+// }
+// class Car extends Vehicle{
+//     @Override
+//     void start(){
+//         System.out.println("Car");
+//     }
+// }
+// public class oops{
+//     public static void main(String args[]){
+//         Vehicle v1 = new Vehicle();
+//         v1.start();
+        
+//         Car c1 = new Car();
+//         c1.start();
+//     }
+// }
