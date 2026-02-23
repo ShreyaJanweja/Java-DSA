@@ -48,3 +48,31 @@
 //         e1.display();
 //     }
 // }
+
+
+
+// //Question 3 – Constructor Overloading-Problem .Create a class Rectangle:Constructor with no parameters,Constructor with length & breadth,Method area()
+// class Rectangle{
+//     int length;
+//     int breadth;
+//     Rectangle(){
+//         length=4;
+//         breadth=4;
+//     }
+//     Rectangle(int length, int breadth){
+//         this.length=length;
+//         this.breadth=breadth;
+//     }
+//     int area(){
+//         return length*breadth;
+//     }
+// }
+// public class oops{
+//     public static void main(String args[]){
+//         Rectangle r1 = new Rectangle(2,2);
+//         System.out.println(r1.area());
+//         Rectangle r2 = new Rectangle();
+//         System.out.println(r2.area());
+//     }
+// }
+
