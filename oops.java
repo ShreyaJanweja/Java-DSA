@@ -120,3 +120,25 @@
 //         c1.start();
 //     }
 // }
+
+
+
+// //6.Dynamic Method Dispatch-Problem. Use runtime polymorphism with Animal and Cat
+// class Animal{
+//     void display(){
+//         System.out.println("Animal");
+//     }
+// }
+// class Cat extends Animal{
+//     @Override
+//     void display(){
+//         System.out.println("Cat");
+//     }
+// }
+// public class oops
+// {
+// 	public static void main(String[] args) {
+// 	    Animal a = new Cat();
+// 	    a.display();
+// 	}
+// }
