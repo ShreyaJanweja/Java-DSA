@@ -61,17 +61,31 @@
 // }
 
 
-//toggle ith bit
-import java.util.*;
-public class bitmasking {
+// //toggle ith bit
+// import java.util.*;
+// public class bitmasking {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int i=sc.nextInt();
-        sc.close();
-        n=n^(1<<i);
-		System.out.println(n);
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int i=sc.nextInt();
+//         sc.close();
+//         n=n^(1<<i);
+// 		System.out.println(n);
 
-    }
-}
+//     }
+// }
+
+
+// //find unique element in an array
+// public class bitmasking {
+//     public static void main(String[] args) {
+//        int[] arr={1,2,3,4,3,5,2,5,1};
+// 	   int ans = 0;
+// 	   for(int i=0; i<arr.length; i++){
+// 			ans ^= arr[i];
+// 	   }
+// 	   System.out.println(ans);
+
+//     }
+// }
