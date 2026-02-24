@@ -142,3 +142,32 @@
 // 	    a.display();
 // 	}
 // }
+
+
+
+// // Question 9 – Multilevel Inheritance - Problem . Create:Class A,Class B extends A,Class C extends B . Call methods from all levels
+// class A {
+//     void displayA(){
+//         System.out.println("class A");
+//     }
+// }
+// class B extends A {
+//     void displayB(){
+//         System.out.println("class B");
+//     }
+// }
+// class C extends B {
+//     void displayC(){
+//         System.out.println("class C");
+//     }
+// }
+// public class oops{
+//     public static void main(String args[]){
+//         C obj = new C();
+//         obj.displayA();
+//         obj.displayB();
+//         obj.displayC();
+//     }
+// }
+
+
