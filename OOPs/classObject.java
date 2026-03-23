@@ -45,7 +45,31 @@ package OOPs;
 
 
 
-//parameterized constructor
+// //parameterized constructor
+// class Student{
+//     String name;
+//     int age;
+
+//     Student(String name, int age){
+//        this.name = name;
+//        this.age = age;
+//     }
+
+//     void display(){
+//         System.out.println(name);
+//         System.out.println(age);
+//     }
+// }
+// public class classObject {
+//     public static void main(String[] args) {
+//         Student s1 = new Student("Shreya",20);
+//         s1.display();
+//     }
+// }
+
+
+
+//copy constructor
 class Student{
     String name;
     int age;
@@ -53,6 +77,11 @@ class Student{
     Student(String name, int age){
        this.name = name;
        this.age = age;
+    }
+
+    Student(Student s){
+        this.name = s.name;
+        this.age = s.age;
     }
 
     void display(){
