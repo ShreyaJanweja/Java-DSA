@@ -25,24 +25,24 @@
 
 
 
-//interface 
-package OOPs;
-interface Animal
-{
-    void sound();    //public + abstract
-}
-class Dog implements Animal
-{
-    public void sound()
-    {
-        System.out.println("Dog barks");
-    }
-}
-public class abstraction
-{
-    public static void main(String[] args)
-    {
-        Dog d = new Dog();   // object create
-        d.sound();           // method call
-    }
-}
+// //interface 
+// package OOPs;
+// interface Animal
+// {
+//     void sound();    //public + abstract
+// }
+// class Dog implements Animal
+// {
+//     public void sound()
+//     {
+//         System.out.println("Dog barks");
+//     }
+// }
+// public class abstraction
+// {
+//     public static void main(String[] args)
+//     {
+//         Dog d = new Dog();   // object create
+//         d.sound();           // method call
+//     }
+// }
