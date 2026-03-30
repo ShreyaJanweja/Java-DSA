@@ -55,22 +55,48 @@ package exceptionHandling;
 
 
 
-//try-catch-finally block - to handle exceptions and execute some code regardless of whether an exception is thrown or not
-public class Exceptions {
+// //try-catch-finally block - to handle exceptions and execute some code regardless of whether an exception is thrown or not
+// public class Exceptions {
 
-    public static void main(String[] args) {
-        int a=10,b=0,c;
-        try{
-            c=a/b;
-            System.out.println(c);
-            System.out.println("like share");
-        }
-        catch(ArithmeticException e){
-            System.out.println("can't divide be zero");
-        }
-        finally{
-            System.out.println("subscribe");
-        }
-        System.out.println("main method ended");
-    }
-}
+//     public static void main(String[] args) {
+//         int a=10,b=0,c;
+//         try{
+//             c=a/b;
+//             System.out.println(c);
+//             System.out.println("like share");
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println("can't divide be zero");
+//         }
+//         finally{
+//             System.out.println("subscribe");
+//         }
+//         System.out.println("main method ended");
+//     }
+// }
+
+
+
+// //multiple catch block - to handle multiple exceptions
+// public class Exceptions {
+
+//     public static void main(String[] args) {
+//         try{
+//             int a=10,b=0,c;
+//             c=a/b;
+//             System.out.println(c);
+//         }
+//         catch(ArithmeticException a){
+//             System.out.println("can't divide by zero");
+//         }
+
+//         try{
+//             int arr[] = {10,20,30,40};
+//             System.out.println(arr[5]);
+//         }
+//         catch(ArrayIndexOutOfBoundsException b){
+//             System.out.println("beyond the array limit");
+//         }
+//         System.out.println("main method ended");
+//     }
+// }
