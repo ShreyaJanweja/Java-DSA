@@ -1,5 +1,5 @@
 // this file has class & object + constructor + access modifiers question 
-package OOPs;
+// package OOPs;
 
 // //basic class & object code
 // class Student{
