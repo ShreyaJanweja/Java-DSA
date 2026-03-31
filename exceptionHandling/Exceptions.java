@@ -100,3 +100,24 @@ package exceptionHandling;
 //         System.out.println("main method ended");
 //     }
 // }
+
+
+
+// //examplen2 - multiple catch blocks
+// public class Exceptions {
+//     public static void main(String[] args) {
+//         try{
+//             int arr[] = new int[5];
+//             arr[10] = 50;
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println("Arithematic error");
+//         }
+//         catch(ArrayIndexOutOfBoundsException e){
+//             System.out.println("Array Index error");
+//         }
+//         catch(Exception e){
+//             System.out.println("General error");
+//         }
+//     }
+// }
