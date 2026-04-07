@@ -93,18 +93,41 @@ package bitmasking;
 // }
 
 
-//find missing element in an array
-public class bitmasking {
+// //find missing element in an array
+// public class bitmasking {
 
+// 	public static void main(String[] args) {
+// 		int arr[] = {0,1,3,4,5};
+// 		int ans = 0;
+// 		for(int i=0; i<=arr.length; i++){
+// 			ans ^= i;
+// 		}
+// 		for(int num: arr){
+// 			ans ^= num;
+// 		}
+// 		System.out.println(ans);
+// 	}
+// }
+
+
+
+
+//ques - power set
+/*class Main
+{
 	public static void main(String[] args) {
-		int arr[] = {0,1,3,4,5};
-		int ans = 0;
-		for(int i=0; i<=arr.length; i++){
-			ans ^= i;
-		}
-		for(int num: arr){
-			ans ^= num;
-		}
-		System.out.println(ans);
-	}
-}
+	    int[] arr = {1,2,3};
+        int n = arr.length;
+
+        for(int i=0;i<(1<<n);i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                if((i&(1<<j))!=0){
+                    System.out.print(arr[j]+" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}*/
