@@ -1,3 +1,5 @@
+package bitmasking;
+
 // //ques - to check even odd using bitmasking
 // import java.util.*;
 // public class bitmasking {

@@ -1,3 +1,5 @@
+package OOPs;
+
 // //1. create a class student class with:● name, rollNo ● Constructor ● Method display()
 // class Student{
 //     String name;
