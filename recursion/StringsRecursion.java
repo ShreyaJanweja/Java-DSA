@@ -1,3 +1,5 @@
+package recursion;
+
 // //ques.1) Extract all a's from a string using recursion
 // //input: abccad , output: bccd
 // //method-1 ) tried myself

@@ -1,3 +1,5 @@
+package arrays;
+
 // //ARRAYS BASICS
 // //1. calculate sum of elements in an array
 // import java.util.*;
