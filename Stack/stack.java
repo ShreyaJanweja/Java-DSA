@@ -51,7 +51,35 @@ package Stack;
 
 
 
-//2.) insert at bottom of the stack 
+// //2.) insert at bottom of the stack 
+// import java.util.*;
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         Stack<Integer> st = new Stack<>();
+//         for(int i=0; i<n; i++){
+//             int x = sc.nextInt();
+//             st.push(x);
+//         }
+//         System.out.println("original stack : "+st);
+//         int num = sc.nextInt();
+//         sc.close();
+//         Stack<Integer> helperSt = new Stack<>();
+//         while(st.size()>0){
+//             helperSt.push(st.pop());
+//         }
+//         st.push(num);
+//         while(helperSt.size()>0){
+//             st.push(helperSt.pop());
+//         }
+//         System.out.println("new stack : "+st);
+//     }
+// }
+
+
+
+//3.) insert at any index of stack 
 import java.util.*;
 class Main{
     public static void main(String args[]){
@@ -59,14 +87,15 @@ class Main{
         int n=sc.nextInt();
         Stack<Integer> st = new Stack<>();
         for(int i=0; i<n; i++){
-            int x = sc.nextInt();
+            int x=sc.nextInt();
             st.push(x);
         }
+        sc.close();
         System.out.println("original stack : "+st);
         int num = sc.nextInt();
-        sc.close();
+        int idx = sc.nextInt();
         Stack<Integer> helperSt = new Stack<>();
-        while(st.size()>0){
+        while(st.size()>idx){
             helperSt.push(st.pop());
         }
         st.push(num);
