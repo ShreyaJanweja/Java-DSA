@@ -79,29 +79,53 @@ package Stack;
 
 
 
-//3.) insert at any index of stack 
-import java.util.*;
-class Main{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        Stack<Integer> st = new Stack<>();
-        for(int i=0; i<n; i++){
-            int x=sc.nextInt();
-            st.push(x);
-        }
-        sc.close();
-        System.out.println("original stack : "+st);
-        int num = sc.nextInt();
-        int idx = sc.nextInt();
-        Stack<Integer> helperSt = new Stack<>();
-        while(st.size()>idx){
-            helperSt.push(st.pop());
-        }
-        st.push(num);
-        while(helperSt.size()>0){
-            st.push(helperSt.pop());
-        }
-        System.out.println("new stack : "+st);
-    }
-}
+// //3.) insert at any index of stack 
+// import java.util.*;
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         Stack<Integer> st = new Stack<>();
+//         for(int i=0; i<n; i++){
+//             int x=sc.nextInt();
+//             st.push(x);
+//         }
+//         sc.close();
+//         System.out.println("original stack : "+st);
+//         int num = sc.nextInt();
+//         int idx = sc.nextInt();
+//         Stack<Integer> helperSt = new Stack<>();
+//         while(st.size()>idx){
+//             helperSt.push(st.pop());
+//         }
+//         st.push(num);
+//         while(helperSt.size()>0){
+//             st.push(helperSt.pop());
+//         }
+//         System.out.println("new stack : "+st);
+//     }
+// }
+
+
+
+
+// //4.) reverse stack 
+// import java.util.*;
+// class Main{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         Stack<Integer> st = new Stack<>();
+//         for(int i=0; i<n; i++){
+//             int x=sc.nextInt();
+//             st.push(x);
+//         }
+//         sc.close();
+//         System.out.println("Original Stack : "+st);
+//         Stack<Integer> revSt = new Stack<>();
+//         while(st.size()>0){
+//             revSt.push(st.pop());
+//         }
+//         System.out.println("reverse stack : "+revSt);
+//     }
+// }
