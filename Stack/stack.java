@@ -129,3 +129,17 @@ package Stack;
 //         System.out.println("reverse stack : "+revSt);
 //     }
 // }
+
+
+
+
+// //stack underflow - empty stack Exception
+// import java.util.*;
+// class Main{
+//     public static void main(String args[]){
+//         Stack<Integer> st = new Stack<>();
+//         st.push(10);
+//         System.out.println(st.pop());
+//         System.out.println(st.pop());
+//     }
+// }
