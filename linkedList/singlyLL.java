@@ -209,3 +209,143 @@ package linkedList;
 // 	}
 // }
 
+
+
+
+// //delete from beginning
+// import java.util.*;
+// class Node{
+//     int data;
+//     Node next;
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// class LinkedList{
+//     Node head;
+//     void add(int data){
+//         Node newNode = new Node(data);
+//         if(head==null){
+//             head=newNode;
+//         }
+//         else{
+//             Node temp = head;
+//             while(temp.next!=null){
+//                 temp=temp.next;
+                
+//             }
+//             temp.next = newNode;
+//         }
+//     }
+//     void deleteFromBegin(){
+//         if(head==null){
+//             System.out.println("list is already empty");
+//             return;
+//         } else{
+//             head=head.next;
+//         }
+//     }
+//     void display(){
+//         Node temp=head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+// class Main
+// {
+// 	public static void main (String[] args)
+// 	{
+// 	    Scanner sc = new Scanner(System.in);
+// 	    int n = sc.nextInt();
+// 	    LinkedList list = new LinkedList();
+// 	    for(int i=0; i<n; i++){
+// 	        int num = sc.nextInt();
+// 	        list.add(num);
+// 	    }
+// 	    System.out.println("before: ");
+// 	    list.display();
+// 	    System.out.println("after: ");
+// 	    list.deleteFromBegin();
+// 	    list.display();
+// 	    sc.close();
+// 	}
+// }
+
+
+
+
+// //delete from end
+// import java.util.*;
+// class Node{
+//     int data;
+//     Node next;
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// class LinkedList{
+//     Node head;
+//     void add(int data){
+//         Node newNode = new Node(data);
+//         if(head==null){
+//             head=newNode;
+//         }
+//         else{
+//             Node temp = head;
+//             while(temp.next!=null){
+//                 temp=temp.next;
+                
+//             }
+//             temp.next = newNode;
+//         }
+//     }
+//     void deleteFromEnd(){
+//         if(head==null){
+//             System.out.println("list is already empty");
+//             return;
+//         }
+//         else if(head.next==null){
+//             head=null;
+//         }
+//         else{
+//             Node temp = head;
+//             while(temp.next.next != null){
+//                 temp=temp.next;
+//             }
+//             temp.next=null;
+//         }
+//     }
+//     void display(){
+//         Node temp=head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+// class Main
+// {
+// 	public static void main (String[] args)
+// 	{
+// 	    Scanner sc = new Scanner(System.in);
+// 	    int n = sc.nextInt();
+// 	    LinkedList list = new LinkedList();
+// 	    for(int i=0; i<n; i++){
+// 	        int num = sc.nextInt();
+// 	        list.add(num);
+// 	    }
+// 	    System.out.println("before: ");
+// 	    list.display();
+// 	    System.out.println("after: ");
+// 	    list.deleteFromEnd();
+// 	    list.display();
+// 	    sc.close();
+// 	}
+// }
+
